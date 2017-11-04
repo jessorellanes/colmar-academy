@@ -417,9 +417,19 @@ footer div a {
 
   .courses-section {
     background-color: #FFFFFF;
+    border-bottom: 1px solid #F5F5F5;
+  }
+
+  .thesis-section,
+  .courses-section {
+    border-top: 1px solid #F5F5F5;
   }
 
   /**Thesis**/
+
+  .thesis-section {
+    margin-top: 2rem;
+  }
 
   .thesis-content {
   flex-direction: column;
