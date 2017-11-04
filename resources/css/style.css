@@ -54,16 +54,20 @@ html {
 }
 
 /**Header**/
+header,
+footer {
+  height: 64px;
+}
 
 header {
 	position: fixed;
 	width: 100%;
-	height: 64px;
 	background-color: #FFFFFF;
 	border: 1px solid #F5F5F5;
 }
 
-.header {
+.header,
+footer.container {
   height: 100%;
 	justify-content: space-between;
 	align-items: center;
@@ -105,6 +109,28 @@ nav.desktop,
 	color: #212121;
 }
 
+/**Text Rules**/
+
+h1,
+h2,
+.title {
+	font-family: "Lato";
+	font-size: 2rem;
+	padding: 2rem 0 1.5rem 0;
+}
+
+h2 {
+  padding-bottom: 2rem;
+}
+
+.author,
+h3,
+h4 {
+  font-family: "lato";
+  padding-top: 1.5rem;
+  padding-bottom: 0.5rem;
+}
+
 /**Banner**/
 
 .banner-container {
@@ -124,13 +150,6 @@ nav.desktop,
 .sidebar {
   padding-top: 2rem;
 	width: 40%;
-}
-
-h1,
-h2 {
-	font-family: "Lato";
-	font-size: 2rem;
-	padding: 2rem 0 1.5rem 0;
 }
 
 .banner-info p {
@@ -160,12 +179,6 @@ button {
 
 /**News**/
 
-.author,
-h4 {
-  font-family: "lato";
-  padding-top: 2rem;
-}
-
 .news-sidebar {
   border-left: 1px solid #F5F5F5;
 }
@@ -184,7 +197,7 @@ h4 {
   padding: 1rem 0.5rem;
 }
 
-.sidebar-element-text p {
+.description {
   font-size: 0.8rem;
   padding: 0.5rem 0;
 }
@@ -199,5 +212,59 @@ h4 {
   border-bottom: 1px solid #F5F5F5;
 }
 
+.thesis-sidebar-element:hover,
+.news-sidebar-element:hover {
+  background-color: #F5F5F5;
+}
 
-/**Thesis**/
+/**Course**/
+
+.course {
+  width: 30%;
+}
+
+.course-img {
+  width: 100%;
+  overflow: hidden;
+}
+
+.course-img img {
+  width: 100%;
+}
+
+.course-text {
+  background-color: #FFFFFF;
+  padding: 0rem 1rem 1rem 1rem;
+  height: 7rem;
+  overflow: hidden;
+}
+
+.course:nth-child(even) {
+  margin: 0 2rem;
+}
+
+.course-row:last-child {
+  margin: 2rem 0;
+}
+
+.course h3,
+.course span {
+  padding-bottom: 0.5rem;
+}
+
+.course span {
+  font-size: 0.77rem;
+}
+
+/**Fortitudo**/
+
+footer {
+  border-top: 1px solid #F5F5F5;
+}
+footer div {
+  padding: 2rem 1.5rem;
+}
+
+footer div a {
+  padding-left: 1rem;
+}
